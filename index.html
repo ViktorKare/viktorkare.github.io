@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="ui container">
+        <div class="ui inverted menu ">
+            <a class="item active">
+              Home
+            </a>
+            
+            <div class="right menu">
+                <a class="item" href="https://www.linkedin.com/in/viktor-karefjard">
+                    LinkedIn (ext.)
+                  </a>
+                <a class="item" href="https://github.com/ViktorKare">
+                    GitHub (ext.)
+                </a>
+                <div onclick="$('.ui.modal').modal('show');">
+                    <a class="item contactform">
+                        Contact Form
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+        <div class="ui column stackable grid">
+            <div class="four wide column">
+                <div class="ui inverted segment titlecard">
+                    <div class="ui fluid image">
+                        <img class="greyscale" src="/img/viktor.jpg" onclick="$('.greyscale').transition('jiggle');">
+                    </div>
+                    <div class="content">
+                        <h4 class="header">Viktor Kårefjärd</h4>
+                        <div class="meta">
+                            <div class="description">Robotics and Autonomous Systems Engineer</div>
+                            <div class="info">
+                                <b>Email: </b>viktor@karefjard.se<br>
+                                <b>Phone: </b>+4670-916 78 88
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="twelve wide column">
+                <div class="ui inverted segment titledesc" style="height:100%;">
+                    <h1>Hello,</h1>
+                    <p>
+                        Welcome to my page. <br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in leo imperdiet, condimentum ipsum eu, tempus tellus. Morbi sed orci quis purus tempus cursus et in leo. Nulla pulvinar eleifend tempor. Suspendisse volutpat lacinia ex eu accumsan. Vivamus tempus diam mattis vehicula vulputate. Suspendisse interdum dolor non mattis accumsan. Nam auctor elit ut ligula congue, vel fermentum ligula bibendum.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in leo imperdiet, condimentum ipsum eu, tempus tellus. 
+                    </p>
+                </div>
+            </div>
+            <div class="sixteen wide column">
+                <div class="ui segment inverted">
+                    Timeline
+                </div>
+            </div>
+            <div class="twelve wide column">
+                <div class="ui segment inverted">
+                    <h2>Gallery</h2>
+                    <p>Just some screenshots etc from my projects</p>
+                    <div class="ui column stackable grid">
+                        <div class="five wide column">
+                            <div class="ui fluid image" data-tooltip="Screenshot of raw LiDAR point cloud with some people in frame" data-inverted="">
+                                <img src="/img/laura_lidar_1.png">
+                            </div>
+                        </div>
+                        <div class="five wide column">
+                            <div class="ui fluid image" data-tooltip="Screenshot of 3D Object Detection from LiDAR point cloud (CenterPoint method)" data-inverted="">
+                                <img src="/img/laura_lidar_2.png">
+                            </div>
+                        </div>
+                        <div class="five wide column">
+                            <div class="ui fluid image" data-tooltip="3D Object Detections (BEVFusion method on NuScences data)" data-inverted="">
+                                <img src="/img/detection_3d_object.png">
+                            </div>
+                        </div>
+                        <div class="ten wide column">
+                            <div class="ui fluid image" data-tooltip="Screenshot from a project course in robotics. Drone with perception, localization, and planning capabilities." data-inverted="">
+                                <img src="/img/drone_project.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="four wide column">
+                <div class="ui segment inverted">
+                    <h2>Links to documents</h2>
+                    <a href="assets/cv.pdf">
+                        <div class="ui label inverted">
+                            <i class="big address book outline icon"></i>
+                            CV
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+
+    <div class="ui modal">
+        <i class="close icon"></i>
+        <div class="header">
+            Hello! Send me a message
+        </div>
+        <div class="ui form content">
+            <div class="two fields">
+                <div class="field">
+                    <label>First name</label>
+                    <input type="text" placeholder="First Name">
+                </div>
+                <div class="field">
+                    <label>Last name</label>
+                    <input type="text" placeholder="Last Name">
+                </div>
+                
+            </div>
+            <div class="two fields">
+                <div class="field">
+                    <label>Email</label>
+                    <input type="text" placeholder="Email">
+                </div>
+                <div class="field">
+                    <label>Company/Organisation</label>
+                    <input type="text" placeholder="Company/Organisation">
+                </div>
+            </div>
+            
+            <div class="field">
+                <label>Message</label>
+                <textarea></textarea>
+            </div>
+
+            <div class="ui message">
+                <div class="header">
+                  Not implemented yet!
+                </div>
+                <p>Sorry I haven't added the sending messages feature yet, please use my normal email for now...</p>
+            </div>
+
+            <div class="actions">
+                <div class="ui deny right labeled icon button">
+                Cancel
+                <i class="remove icon"></i>
+                </div>
+                <div class="ui positive right labeled icon button disabled">
+                Send
+                <i class="send icon"></i>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.js"></script>
+<script src="js/script.js"></script>
+</html>

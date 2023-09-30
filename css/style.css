@@ -1,0 +1,62 @@
+body{
+    
+    background: rgb(79,59,64);
+    background: radial-gradient(circle, rgba(79,59,64,1) 0%, rgba(53,68,84,1) 100%);
+    background-size: 400% 400%;
+	animation: animation 15s ease infinite;
+	height: 100vh;
+}
+@keyframes animation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+img{
+    border-radius: .28571429rem;
+}
+.ui.inverted.menu, .ui.inverted.segment, .ui.inverted.card{
+    background: #37383a;
+    color: rgba(255,255,255,.9);
+    box-shadow: 0 1px 3px 0 #202020;
+}
+.ui.card .meta, .ui.cards>.card .meta, .ui.card>.content>a.header{
+    color: rgba(255,255,255,.9);
+}
+.ui.label{
+    background-color: #474f79;
+}
+
+
+
+.titlecard{
+    padding: 0 !important;
+}
+.titlecard img {
+    filter: grayscale(100%) !important;
+}
+.titlecard .content{
+    padding: 1em 1em;
+}
+.titlecard .content h4{
+    margin: 0;
+}
+
+.titlecard .content .description{
+    font-size: 0.75rem;
+    margin-bottom: .75em;
+}
+.titledesc p{
+    font-size: 1.2rem;
+}
+
+
+.contactform{
+    background-color: #474f79 !important;
+    border-radius: 3px !important;
+}
