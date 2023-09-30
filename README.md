@@ -1,14 +1,19 @@
 # My personal website
+
+##  [viktorkare.github.io](https://viktorkare.github.io/ "Viktor Kårefjärd") 
 ## [viktork.online](viktork.online "Viktor Kårefjärd")
 
 
-```
-start
-```
 
 
-| Subdomains    | Purpose           | Public  |
+
+
+
+### TODO:
+| Feature    | Comment           | Completed  |
 | ------------- |-------------      |:-----:|
-|               | CV etc             | Y |
-| *start*       | startpage          | N |
-| *alt*         | fun projects       | N |
+| Links to git and LinkedIn          |            | Y |
+| Text          |            | N |
+| CV doc          |            | N |
+| Better images         |            | N |
+| Contact form         |            | N |
